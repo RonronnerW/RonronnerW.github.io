@@ -459,63 +459,46 @@
 <hr>
 <h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><ul>
 <li><p>用 <strong>&#96;&#96;&#96;</strong> 包裹一段代码</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">  $(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">      <span class="title function_">alert</span>(<span class="string">&#x27;RUNOOB&#x27;</span>);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line"></span><br><span class="line">#### 链接</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(function () &#123;</span><br><span class="line">    alert(&#x27;RUNOOB&#x27;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
 </ul>
-<p><a href="%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80">链接名称</a></p>
-<p>或者</p>
-<p>&lt;链接地址&gt;</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">***</span><br><span class="line"></span><br><span class="line">#### 图片</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="/%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80" alt="属性文本"></p>
-<p><img src="/%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80" alt="属性文本" title="可选标题"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">***</span><br><span class="line"></span><br><span class="line">#### 表格</span><br><span class="line"></span><br><span class="line">* Markdown 制作表格使用 **|** 来分隔不同的单元格，使用 **-** 来分隔表头和其他行。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>表头</th>
-<th>表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-<tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-</tbody></table>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* **我们可以设置表格的对齐方式：**</span><br><span class="line">  - **-:** 设置内容和标题栏居右对齐。</span><br><span class="line">  </span><br><span class="line">  - **:-** 设置内容和标题栏居左对齐。</span><br><span class="line">  - **:-:** 设置内容和标题栏居中对齐。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th align="left">左对齐</th>
-<th align="right">右对齐</th>
-<th align="center">居中对齐</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-<tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-</tbody></table>
-<pre><code>
-***
+<hr>
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[链接名称](链接地址)</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line"></span><br><span class="line">&lt;链接地址&gt;</span><br></pre></td></tr></table></figure>
 
-#### 高级技巧
+<hr>
+<h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![属性文本](图片地址 &quot;可选标题&quot;)</span><br></pre></td></tr></table></figure>
 
-* **转义**：使用反斜杠转义特殊字符
-* **公式**：使用 [KaTeX](https://github.com/Khan/KaTeX) 或者 [MathJax](https://github.com/mathjax/MathJax) 来渲染数学表达式。
-  * `$...$` 或者 `\(...\)` 中的数学表达式将会在行内显示。
-  * `$$...$$` 或者 `\[...\]` 或者 ````math` 中的数学表达式将会在块内显示。
+<hr>
+<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><ul>
+<li>Markdown 制作表格使用 <strong>|</strong> 来分隔不同的单元格，使用 <strong>-</strong> 来分隔表头和其他行。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br></pre></td></tr></table></figure>
 
-* **[流程图、时序图、甘特图](https://www.runoob.com/markdown/md-advance.html)**
-</code></pre>
+<ul>
+<li><strong>我们可以设置表格的对齐方式：</strong><ul>
+<li><p><strong>-:</strong> 设置内容和标题栏居右对齐。</p>
+</li>
+<li><p><strong>:-</strong> 设置内容和标题栏居左对齐。</p>
+</li>
+<li><p><strong>:-:</strong> 设置内容和标题栏居中对齐。</p>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="高级技巧"><a href="#高级技巧" class="headerlink" title="高级技巧"></a>高级技巧</h4><ul>
+<li><p><strong>转义</strong>：使用反斜杠转义特殊字符</p>
+</li>
+<li><p><strong>公式</strong>：使用 <a target="_blank" rel="noopener" href="https://github.com/Khan/KaTeX">KaTeX</a> 或者 <a target="_blank" rel="noopener" href="https://github.com/mathjax/MathJax">MathJax</a> 来渲染数学表达式。</p>
+<ul>
+<li><code>$...$</code> 或者 <code>\(...\)</code> 中的数学表达式将会在行内显示。</li>
+<li><code>$$...$$</code> 或者 <code>\[...\]</code> 或者 &#96;&#96;&#96;&#96;math&#96; 中的数学表达式将会在块内显示。</li>
+</ul>
+</li>
+<li><p><strong><a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-advance.html">流程图、时序图、甘特图</a></strong></p>
+</li>
+</ul>
 
                 
             </div>
