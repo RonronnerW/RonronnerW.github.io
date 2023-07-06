@@ -4,21 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="markdown, RonronnerW">
-    <meta name="description" content="标题
-使用 # 号可表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推。
-
-
-段落格式
-换行：段落换行使用两个以上空格加上回车
-
-字体：
-
-
-​		*斜体*
-​		_斜体_
-​		**粗体**
-​		**粗体">
+    <meta name="keywords" content="关系数据库, RonronnerW">
+    <meta name="description" content="码
+超码：一个或多个属性的集合，这些属性的组合可以使我们在一个关系中唯一标识一个元组。
+候选码：最小超码称为候选码。
+主码：选中用来在一个关系中区分不同元组的候选码。
+外码：一个关系模式r1可能在它的属性中包括另一个关系模式r2的主码，这个">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>markdown | RonronnerW</title>
+    <title>关系数据库 | RonronnerW</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -347,12 +338,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">markdown</h1>
+                    <h1 class="description center-align post-title">关系数据库</h1>
                 </div>
             </div>
         </div>
@@ -376,8 +367,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/markdown/">
-                                <span class="chip bg-color">markdown</span>
+                            <a href="/tags/SQL/">
+                                <span class="chip bg-color">SQL</span>
                             </a>
                         
                     </div>
@@ -392,7 +383,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-06-21
+                    2023-07-02
                 </div>
                 
 
@@ -418,86 +409,237 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><ul>
-<li>使用 <strong>#</strong> 号可表示 1-6 级标题，一级标题对应一个 <strong>#</strong> 号，二级标题对应两个 <strong>#</strong> 号，以此类推。</li>
+                <h4 id="码"><a href="#码" class="headerlink" title="码"></a>码</h4><ul>
+<li><strong>超码</strong>：一个或多个属性的集合，这些属性的组合可以使我们在一个关系中唯一标识一个元组。</li>
+<li><strong>候选码</strong>：最小超码称为候选码。</li>
+<li><strong>主码</strong>：选中用来在一个关系中区分不同元组的候选码。</li>
+<li><strong>外码</strong>：一个关系模式<code>r1</code>可能在它的属性中包括另一个关系模式<code>r2</code>的主码，这个属性在<code>r1</code>上称作参照<code>r2</code>的外码。</li>
 </ul>
-<hr>
-<h4 id="段落格式"><a href="#段落格式" class="headerlink" title="段落格式"></a>段落格式</h4><ul>
-<li><p><strong>换行</strong>：段落换行使用两个以上空格加上回车</p>
+<h4 id="关系代数"><a href="#关系代数" class="headerlink" title="关系代数"></a>关系代数</h4><ul>
+<li>选择（σ）：返回满足谓词的行</li>
+<li>投影（π）：对输入关系的所有行输出指定属性。从输出中去除重复元组</li>
+<li>自然连接（⋈）：两个关系相同名称的属性自动进行记录匹配，结果去除重复属性列</li>
+<li>笛卡尔积（×）：两个关系中输出所有元组对（无论他们共同属性上的取值是否相同）</li>
+<li>并（∪）：输出两个关系的元组的并</li>
+</ul>
+<h4 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h4><ul>
+<li><p><strong>基本类型</strong>：</p>
+<ul>
+<li>char(n): 固定长度字符串。会追加空格使其达到串长度。</li>
+<li>varchar(n): 可变长度字符串。不会追加空格</li>
+<li>…</li>
+</ul>
 </li>
-<li><p><strong>字体</strong>：</p>
-</li>
-</ul>
-<p>​		*斜体*</p>
-<p>​		_斜体_</p>
-<p>​		**粗体**</p>
-<p>​		**粗体**</p>
-<p>​		***粗斜体***</p>
-<p>​		___粗斜体___</p>
-<ul>
-<li><strong>分割线</strong>：</li>
-</ul>
-<p>​		你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西</p>
-<ul>
-<li><strong>删除线</strong>：</li>
-</ul>
-<p>​		如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 <strong>~~</strong> 即可。</p>
-<ul>
-<li><strong>下划线</strong>：</li>
-</ul>
-<p>​		下划线可以通过 HTML 的 <strong><u></strong> 标签来实现。例如：&lt;u&gt;文本&lt;&#x2F;u&gt;</p>
-<hr>
-<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><ul>
-<li><strong>无序表</strong>：无序列表使用星号(<em>****)、加号(<strong>+</strong>)或是减号(</em>*-**)作为列表标记，这些标记后面要添加一个空格，然后再填写内容</li>
-<li><strong>有序表</strong>：使用数字并加上 <strong>.</strong> 号来表示</li>
-<li><strong>列表嵌套</strong>：子列表中的选项前面添加两个或四个空格即可</li>
-</ul>
-<hr>
-<h4 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h4><ul>
-<li>区块引用是在段落开头使用 <strong>&gt;</strong> 符号 ，然后后面紧跟一个<strong>空格</strong>符号。另外区块是可以嵌套的，一个 <strong>&gt;</strong> 符号是最外层，两个 <strong>&gt;</strong> 符号是第一层嵌套，以此类推。</li>
-</ul>
-<hr>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><ul>
-<li><p>用 <strong>&#96;&#96;&#96;</strong> 包裹一段代码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(function () &#123;</span><br><span class="line">    alert(&#x27;RUNOOB&#x27;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
-</ul>
-<hr>
-<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[链接名称](链接地址)</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line"></span><br><span class="line">&lt;链接地址&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![属性文本](图片地址 &quot;可选标题&quot;)</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><ul>
-<li>Markdown 制作表格使用 <strong>|</strong> 来分隔不同的单元格，使用 <strong>-</strong> 来分隔表头和其他行。</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br></pre></td></tr></table></figure>
+<li><p><strong>基本模式定义</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table department</span><br><span class="line">	(dept_name varchar(20) not null,</span><br><span class="line">	building varchar(15),</span><br><span class="line">	primary key(dept_name)</span><br><span class="line">	);</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li><strong>我们可以设置表格的对齐方式：</strong><ul>
-<li><p><strong>-:</strong> 设置内容和标题栏居右对齐。</p>
-</li>
-<li><p><strong>:-</strong> 设置内容和标题栏居左对齐。</p>
-</li>
-<li><p><strong>:-:</strong> 设置内容和标题栏居中对齐。</p>
-</li>
+<li>完整性约束：<ul>
+<li><code>primary key(a)</code>：主码</li>
+<li><code>foreign key(a) references B</code>：外码</li>
+<li><code>not null</code>：不允许空值</li>
 </ul>
 </li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h4 id="高级技巧"><a href="#高级技巧" class="headerlink" title="高级技巧"></a>高级技巧</h4><ul>
-<li><p><strong>转义</strong>：使用反斜杠转义特殊字符</p>
+<p>插入元组：<code>insert into department values(&#39;wang&#39;,&#39;a&#39;);</code></p>
+<p>删除元组：<code>delete from department</code></p>
+<p>删除关系：<code>drop table department</code></p>
+<p>为关系添加属性：<code>alter table department add A D</code>,A为属性，D为属性的域</p>
+<p>去掉属性：<code>alter table department drop A</code></p>
 </li>
-<li><p><strong>公式</strong>：使用 <a target="_blank" rel="noopener" href="https://github.com/Khan/KaTeX">KaTeX</a> 或者 <a target="_blank" rel="noopener" href="https://github.com/mathjax/MathJax">MathJax</a> 来渲染数学表达式。</p>
+<li><p><strong>查询的基本结构</strong>：</p>
 <ul>
-<li><code>$...$</code> 或者 <code>\(...\)</code> 中的数学表达式将会在行内显示。</li>
-<li><code>$$...$$</code> 或者 <code>\[...\]</code> 或者 &#96;&#96;&#96;&#96;math&#96; 中的数学表达式将会在块内显示。</li>
+<li><p>单关系查询：<code>select dept_name from department;</code></p>
+<ul>
+<li>强行删除重复：<code>select distinct dept_name from department;</code></li>
+<li>where 满足特定谓词：<code>select dept_name from department where ;</code></li>
 </ul>
 </li>
-<li><p><strong><a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-advance.html">流程图、时序图、甘特图</a></strong></p>
+<li><p>多关系查询：把访问的关系都列在from中，where指定匹配条件</p>
 </li>
+<li><p>自然连接：<code>select name,course_id from instructor natural join teaches</code></p>
+</li>
+</ul>
+</li>
+<li><p><strong>附加的基本运算</strong>：</p>
+<ul>
+<li><p>更名运算：<code>old-name as new-name</code>，可以出现在<code>select</code>和<code>from</code>中</p>
+</li>
+<li><p>字符串运算：使用<code>Like</code>操作实现模式匹配</p>
+<ul>
+<li><code>%</code>：匹配任意子串</li>
+<li><code>_</code>：匹配任意一个字符</li>
+<li>使用<code>escape</code>定义转义字符。<code>like &#39;ab\%cd%&#39; escape &#39;\&#39;  匹配ab%cd开头字符串   </code></li>
+</ul>
+</li>
+<li><p>排序：<code>order by  默认升序，可以用desc表示降序，asc表示升序</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select *</span><br><span class="line">from instrutor</span><br><span class="line">order by salary desc, name asc;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>where子句谓词：</p>
+<ul>
+<li><code>between A and B  表示一个值属于[A,B]</code></li>
+<li><code>and   增加一个条件</code></li>
+<li>元组比较运算：<code>(a1,a2) &lt;= (b1,b2) 表示a1&lt;=b1且a2&lt;=b2时为真</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>集合运算</strong>：</p>
+<ul>
+<li><code>union</code>：并。自动去重复，保留重复必须用<code>union all</code></li>
+<li><code>intersect</code>：交。同上</li>
+<li><code>except</code>：差。同上</li>
+</ul>
+</li>
+<li><p><strong>空值</strong>：</p>
+<ul>
+<li>算数运算：任一输入为空，结果为空</li>
+<li>比较运算：涉及空值的比较运算结果为<code>unknown</code>，where子句谓词对一个元组计算出false或unknown都不能加入到结果集中。在谓词中<code>null = null</code>会返回unknown，而不是true。</li>
+<li>集合运算</li>
+</ul>
+</li>
+<li><p><strong>聚集函数</strong>：以值的一个集合为 输入，返回单个值的函数。例如：avg,min,max,sum,count</p>
+<ul>
+<li><p>基本聚集：计算元组个数使用<code>count(*)</code>，使用<code>count(*)</code>时不允许使用<code>distinct</code></p>
+</li>
+<li><p>分组聚集：<code>group by</code>给出一个或多个属性来构造分组。注意：出现在<code>select</code>中但是没有被聚集的属性只能是出现在<code>group by</code>子句中的那些属性。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//找出每个系的平均工资</span><br><span class="line">select dept_name,avg(salary) as avg_salary</span><br><span class="line">from instructor</span><br><span class="line">group by dept_name;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>having 子句：对分组限定条件，跟在<code>group by</code>后面。having中的谓词在形成分组后才起作用，所以可以使用聚集函数。</p>
+</li>
+<li><p>对空值和布尔值的聚集：除了<code>count(*)</code>外所有聚集函数都忽略输入集合中的空值。空集的count运算值为0，其他聚集函数输入为空集情况下返回一个空值。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>嵌套子查询</strong>：</p>
+<ul>
+<li><p>集合成员资格：<code>in</code>测试元组是否是集合中的成员</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select count(distinct ID)</span><br><span class="line">from takes</span><br><span class="line">where (course_id,sec_id) in (select course_id,sec_id</span><br><span class="line">								from teaches</span><br><span class="line">								where tesches.ID = 10101);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>集合的比较：</p>
+<ul>
+<li><p>至少比某一个大: <code>&gt; some</code>, 也允许<code>&lt; some, &lt;= some, &gt;=some, =some等价于in, &lt;&gt; some并不等价于not in</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select name</span><br><span class="line">from instructor</span><br><span class="line">where salary &gt; some(select salary</span><br><span class="line">					from instructor</span><br><span class="line">					where dept_name = &#x27;Biology&#x27;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>比所有的都大：<code>&gt; all</code>, <code>&lt;&gt; all等价于not in, =all不等价于in</code></p>
+</li>
+</ul>
+</li>
+<li><p>空关系测试：子查询结果集中是否存在元组：<code>exists</code>，非空返回true；可将关系A包含关系B写成<code>not exists(B except A)</code></p>
+</li>
+<li><p>重复元组存在性测试：<code>unique</code>，没有重复返回true；</p>
+</li>
+<li><p>from子句中的子查询：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">select dept_name, avg_salary</span><br><span class="line">from (select dept_name,avg(salary)</span><br><span class="line">		from instructor</span><br><span class="line">		group by dept_name</span><br><span class="line">		as dept_avg(dept_name,avg_salary)) --as给子查询的结果关系起名字并对属												性重命名</span><br><span class="line">where avg_salary &gt; 4200;</span><br></pre></td></tr></table></figure>
+
+<p>from子句嵌套的子查询中不能使用来自from子句其他关系的相关变量，想要实现此操作需要以<code>lateral</code>作为前缀。</p>
+</li>
+<li><p>with子句：定义临时关系。例如找出最大预算值的系：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">with max_budget(value) as</span><br><span class="line">	(select max(budget)</span><br><span class="line">	from department)</span><br><span class="line">select budget</span><br><span class="line">from department,max_budget</span><br><span class="line">where department.budget = max_budget.value;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>标量子查询：返回包含单个属性的单个元组，可以出现在任何地方</p>
+</li>
+</ul>
+</li>
+<li><p>数据库的修改</p>
+<ul>
+<li><p>删除：<code>delete</code>删除元组, 只能作用于一个关系</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">delete from r</span><br><span class="line">where P；</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>插入：<code>insert</code>, 单个元组插入请求</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">insert into course</span><br><span class="line">	values(&#x27;101&#x27;,&#x27;DS&#x27;,4);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更新：<code>update</code>, 改变元组部分属性值</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">update course</span><br><span class="line">set course_id = &#x27;102&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>case语句：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">case</span><br><span class="line">	when pred1 then ret1</span><br><span class="line">	when pres2 then ret2</span><br><span class="line">	else retn</span><br><span class="line">end</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="中级SQL"><a href="#中级SQL" class="headerlink" title="中级SQL"></a>中级SQL</h4><ul>
+<li><p><strong>连接表达式</strong>：</p>
+<ul>
+<li><p>连接条件：<code>on</code>可以指定任意的连接条件, 出现在连接表达式的末尾</p>
+<p><code>on</code>和<code>where</code>在外连接中的表现不同：on条件是外连接声明的一部分，where子句却不是。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select *</span><br><span class="line">from student join takes on student.ID = takes.ID;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>外连接：通过在结果中创建空值元组的方式，保留连接中丢失的元组</p>
+<ul>
+<li><p>左外连接：只保留出现在左外连接运算之前左边关系的元组,其余属性为空值</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select *</span><br><span class="line">from student natural left outer join takes;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>右外连接：保留右边  <code>natural right outer join</code></p>
+</li>
+<li><p>全外连接：两边都保留  <code>natural full outer join</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>视图</strong>：从基本表中导出的虚拟的表，数据库存储视图定义本身，而不存储执行结果。</p>
+<ul>
+<li><p>视图定义：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">create view view_name as</span><br><span class="line">&lt; query ecpression&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>物化视图：允许存储视图关系，但是必须保证：定义视图的实际关系变化时，视图也随之修改。物化视图查询很快，避免了读取大量底层关系。</p>
+</li>
+<li><p>视图更新：一般不允许对视图关系进行修改</p>
+</li>
+</ul>
+</li>
+<li><p><strong>完整性约束</strong>：作用于创建关系命令的一部分被声明，也可以通过<code>alter table table_name add ...</code>命令施加到关系上</p>
+<ul>
+<li><code>not null</code>：禁止主码出现空值，因此主码不必再显式声明为not null</li>
+<li><code>unique</code>：声明属性形成一个候选码，没有两个元组能在所列出的属性上取值相同</li>
+<li><code>check</code>：保证属性值满足指定的条件。例如：<code>check(budget&gt;0)</code></li>
+<li>参照完整性：外码</li>
+</ul>
+</li>
+<li><p><strong>SQL数据类型于模式</strong>：</p>
+<ul>
+<li><p>日期和时间：<code>data:日期; time:时间; timestamp:data于time的组合</code></p>
+</li>
+<li><p>默认值：<code>default 0:默认值为0</code></p>
+</li>
+<li><p>创建索引：高效的查找而不用扫描关系中的所有元组</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create index student_index on student(ID);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>大对象类型：例如图片等。字符数据的大对象数据类型（clob）、二进制数据的大对象数据类型（blob）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">book_review clob (10KB)</span><br><span class="line">image blob (10MB)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>授权</strong>：</p>
+<ul>
+<li><p>权限的授予与收回：默认情况下，被授予权限的用户&#x2F;角色无权将权限再授予其他用户&#x2F;角色。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grant &lt;权限列表&gt;		--select/insert/update/delete</span><br><span class="line">on &lt;关系/视图&gt;</span><br><span class="line">to &lt;用户/角色列表&gt;;	   --public指系统的所有当前用户和将来的用户</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">revoke &lt;权限列表&gt;</span><br><span class="line">on &lt;关系/视图&gt;</span><br><span class="line">from &lt;用户/角色列表&gt;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>角色：</p>
+<ul>
+<li>创建角色：<code>create role instrutor;</code></li>
+<li>授予权限：同上</li>
+<li>角色可以授予用户&#x2F;角色：<code>grant A to B;</code></li>
+</ul>
+</li>
+<li><p>权限的转移：允许将得到的权限传递给其他用户，需要附加<code>with grant option</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant select on department to Amit with grant option;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>权限的收回：大多数数据库系统中，权限收回默认是级联的。可以申明restrict防止级联收回</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">revoke select on departmnet from Amit restrict;		--防止级联收回</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="高级SQL"><a href="#高级SQL" class="headerlink" title="高级SQL"></a>高级SQL</h4><ul>
+<li><p><strong>函数和过程</strong>：输入自己的函数和过程通常用<code>create or replace</code>对旧代码替换。SQL支持函数重载</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//函数：给定系名返回教师数目</span><br><span class="line">create function dept_count(dept_name varchar(20))</span><br><span class="line">	returns integer</span><br><span class="line">	begin</span><br><span class="line">	declare d_count integer;</span><br><span class="line">		select count(*) into d_count</span><br><span class="line">		from instrutor</span><br><span class="line">		where instrutor.dpt_name = dept_name</span><br><span class="line">	return d_count;</span><br><span class="line">	end</span><br><span class="line">	</span><br><span class="line">//过程：in和out 分别表示参数和返回值</span><br><span class="line">create procedure dept_count(in dept_name varchar(20),out d_count integer)</span><br><span class="line">	begin</span><br><span class="line">		select count(*) into d_count</span><br><span class="line">		from instrutor</span><br><span class="line">		where instrutor.dept_name = dept_name</span><br><span class="line">	end</span><br></pre></td></tr></table></figure>
+
+<p>表函数：返回关系作为结果的函数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">create function instrutor_of(dept_name varchar(20))</span><br><span class="line">	return table(</span><br><span class="line">	ID varchar(5),</span><br><span class="line">	name varchar(20))</span><br><span class="line">return table</span><br><span class="line">	(select ID,name</span><br><span class="line">	from instrutor</span><br><span class="line">	where instrutor.dept_name = dept_name);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>触发器</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">create trigger check after insert on section	--插入元组后启动触发器</span><br><span class="line">	referencing new row as nrow		--建立一个过渡变量用来在插入完成后存储所插入值</span><br><span class="line">	for each row			--插入多个元组时，可以显式迭代每一个元组</span><br><span class="line">	when (nrow.id not in(	--when指定一个条件</span><br><span class="line">		select slot_id</span><br><span class="line">		from slot))</span><br><span class="line">	begin					--触发器执行</span><br><span class="line">		rollback			--回滚</span><br><span class="line">	end;</span><br></pre></td></tr></table></figure></li>
 </ul>
 
                 
@@ -525,7 +667,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2023/06/21/markdown/">http://example.com/2023/06/21/markdown/</a>
+                    <a href="http://example.com/2023/07/02/guan-xi-shu-ju-ku/">http://example.com/2023/07/02/guan-xi-shu-ju-ku/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -563,8 +705,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/markdown/">
-                                    <span class="chip bg-color">markdown</span>
+                                <a href="/tags/SQL/">
+                                    <span class="chip bg-color">SQL</span>
                                 </a>
                             
                         </div>
@@ -643,9 +785,56 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/07/02/guan-xi-shu-ju-ku/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="关系数据库">
+                        
+                        <span class="card-title">关系数据库</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            RonronnerW
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/SQL/">
+                        <span class="chip bg-color">SQL</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2023/06/23/c/">
                     <div class="card-image">
@@ -663,9 +852,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -679,52 +868,6 @@
                     
                     <a href="/tags/C/">
                         <span class="chip bg-color">C++</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/06/21/markdown/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="markdown">
-                        
-                        <span class="card-title">markdown</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-21
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            RonronnerW
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/markdown/">
-                        <span class="chip bg-color">markdown</span>
                     </a>
                     
                 </div>

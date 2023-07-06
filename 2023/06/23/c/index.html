@@ -4,21 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="markdown, RonronnerW">
-    <meta name="description" content="标题
-使用 # 号可表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推。
-
-
-段落格式
-换行：段落换行使用两个以上空格加上回车
-
-字体：
-
-
-​		*斜体*
-​		_斜体_
-​		**粗体**
-​		**粗体">
+    <meta name="keywords" content="C++, RonronnerW">
+    <meta name="description" content="
+预处理器：
+#define 指令把一个名字设定为预处理变量
+#ifdef 当且仅当变量已定义时为真，#ifndef 当且仅当变量未定义时为真。一旦结果为真则执行后续操作直到遇到#endif指令为止。
+123456789#ifndef SA">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>markdown | RonronnerW</title>
+    <title>C++ | RonronnerW</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -347,12 +338,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">markdown</h1>
+                    <h1 class="description center-align post-title">C++</h1>
                 </div>
             </div>
         </div>
@@ -376,8 +367,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/markdown/">
-                                <span class="chip bg-color">markdown</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
                             </a>
                         
                     </div>
@@ -392,7 +383,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-06-21
+                    2023-06-23
                 </div>
                 
 
@@ -418,85 +409,169 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><ul>
-<li>使用 <strong>#</strong> 号可表示 1-6 级标题，一级标题对应一个 <strong>#</strong> 号，二级标题对应两个 <strong>#</strong> 号，以此类推。</li>
-</ul>
-<hr>
-<h4 id="段落格式"><a href="#段落格式" class="headerlink" title="段落格式"></a>段落格式</h4><ul>
-<li><p><strong>换行</strong>：段落换行使用两个以上空格加上回车</p>
-</li>
-<li><p><strong>字体</strong>：</p>
-</li>
-</ul>
-<p>​		*斜体*</p>
-<p>​		_斜体_</p>
-<p>​		**粗体**</p>
-<p>​		**粗体**</p>
-<p>​		***粗斜体***</p>
-<p>​		___粗斜体___</p>
-<ul>
-<li><strong>分割线</strong>：</li>
-</ul>
-<p>​		你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西</p>
-<ul>
-<li><strong>删除线</strong>：</li>
-</ul>
-<p>​		如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 <strong>~~</strong> 即可。</p>
-<ul>
-<li><strong>下划线</strong>：</li>
-</ul>
-<p>​		下划线可以通过 HTML 的 <strong><u></strong> 标签来实现。例如：&lt;u&gt;文本&lt;&#x2F;u&gt;</p>
-<hr>
-<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><ul>
-<li><strong>无序表</strong>：无序列表使用星号(<em>****)、加号(<strong>+</strong>)或是减号(</em>*-**)作为列表标记，这些标记后面要添加一个空格，然后再填写内容</li>
-<li><strong>有序表</strong>：使用数字并加上 <strong>.</strong> 号来表示</li>
-<li><strong>列表嵌套</strong>：子列表中的选项前面添加两个或四个空格即可</li>
-</ul>
-<hr>
-<h4 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h4><ul>
-<li>区块引用是在段落开头使用 <strong>&gt;</strong> 符号 ，然后后面紧跟一个<strong>空格</strong>符号。另外区块是可以嵌套的，一个 <strong>&gt;</strong> 符号是最外层，两个 <strong>&gt;</strong> 符号是第一层嵌套，以此类推。</li>
-</ul>
-<hr>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><ul>
-<li><p>用 <strong>&#96;&#96;&#96;</strong> 包裹一段代码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(function () &#123;</span><br><span class="line">    alert(&#x27;RUNOOB&#x27;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
-</ul>
-<hr>
-<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[链接名称](链接地址)</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line"></span><br><span class="line">&lt;链接地址&gt;</span><br></pre></td></tr></table></figure>
+                <ul>
+<li><p><strong>预处理器</strong>：</p>
+<p><code>#define</code> 指令把一个名字设定为预处理变量</p>
+<p><code>#ifdef</code> 当且仅当变量已定义时为真，<code>#ifndef</code> 当且仅当变量未定义时为真。一旦结果为真则执行后续操作直到遇到<code>#endif</code>指令为止。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#ifndef SALES_DATA_H</span><br><span class="line">#define SALES_DATA_H</span><br><span class="line">#include &lt;string&gt;</span><br><span class="line">struct Sales_data &#123;</span><br><span class="line">	std::string bookNo;</span><br><span class="line">	unsigned units_sold  = 0;</span><br><span class="line">	double revenue = 0.0;</span><br><span class="line">&#125;</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure>
 
-<hr>
-<h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![属性文本](图片地址 &quot;可选标题&quot;)</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><ul>
-<li>Markdown 制作表格使用 <strong>|</strong> 来分隔不同的单元格，使用 <strong>-</strong> 来分隔表头和其他行。</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br></pre></td></tr></table></figure>
-
+<p>第一次包含<code>Sales_data.h</code>时，<code>#ifndef</code>检查结果为真，预处理器执行后面操作直到遇到<code>#endif</code>。此时SALES_DATA_H值变为已定义，<code>Sales_data.h</code>也会被拷贝到程序中。后面再次包含<code>Sales_data.h</code>时检查结果为假，编译器忽略。</p>
+</li>
+<li><p><strong>声明和定义</strong>： </p>
 <ul>
-<li><strong>我们可以设置表格的对齐方式：</strong><ul>
-<li><p><strong>-:</strong> 设置内容和标题栏居右对齐。</p>
+<li><p>声明使得名字为程序所知，一个文件如果想使用别处定义的名字则必须包含那个名字的声明。定义负责创建与名字关联的实体。声明规定了变量的类型和名字，定义还申请存储空间，也可能赋一个初值。</p>
 </li>
-<li><p><strong>:-</strong> 设置内容和标题栏居左对齐。</p>
+<li><p>想声明而非定义变量，就在变量名前添加关键字<code>extern</code>, 而且不要显式地初始化</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">extern int i; //声明</span><br><span class="line">int j; //定义</span><br><span class="line">extern int i = 1; //定义 任何包含显式初始化的声明成为定义</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>:-:</strong> 设置内容和标题栏居中对齐。</p>
-</li>
-</ul>
+<li><p>多个文件中使用同一个变量，就必须声明和定义分离。此时，定义必须出现且只能出现在一个文件中，其他文件中对其声明。</p>
 </li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>复杂的数组声明</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int *ptrs[10];				//从右往左理解，表示含有十个整型指针的数组</span><br><span class="line">int (*parray)[10] = &amp;arr;	//从内往外理解，parray指向一个含有10个整数的数组</span><br><span class="line">int (&amp;arrref)[10] = arr;	//从内往外理解，arrref引用一个含有10个整数的数组</span><br><span class="line">int *(&amp;array)[10] = ptrs;	//array是数组的引用，该数组含有10个指针</span><br></pre></td></tr></table></figure>
 
-<hr>
-<h4 id="高级技巧"><a href="#高级技巧" class="headerlink" title="高级技巧"></a>高级技巧</h4><ul>
-<li><p><strong>转义</strong>：使用反斜杠转义特殊字符</p>
+
 </li>
-<li><p><strong>公式</strong>：使用 <a target="_blank" rel="noopener" href="https://github.com/Khan/KaTeX">KaTeX</a> 或者 <a target="_blank" rel="noopener" href="https://github.com/mathjax/MathJax">MathJax</a> 来渲染数学表达式。</p>
+<li><p><strong>指针与引用</strong>：</p>
 <ul>
-<li><code>$...$</code> 或者 <code>\(...\)</code> 中的数学表达式将会在行内显示。</li>
-<li><code>$$...$$</code> 或者 <code>\[...\]</code> 或者 &#96;&#96;&#96;&#96;math&#96; 中的数学表达式将会在块内显示。</li>
+<li><p>指针本身就是一个对象，允许对指针赋值和拷贝，而且在指针生命周期内它可以先后指向不同的对象。</p>
+</li>
+<li><p>指针无需再定义时赋初值。</p>
+</li>
+<li><p>引用不是对象，没有实际地址，所以不能定义指向引用的指针。</p>
+</li>
+<li><p>一旦定义引用就无法再绑定到另外的对象，之后每次使用这个引用都是访问最初绑定的对象。</p>
+</li>
+<li><p>指向指针的引用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int i = 42;</span><br><span class="line">int *p;			//	p是指针</span><br><span class="line">int *&amp;r = p;	//	r是一个对指针p的引用. 从右往左，首先r是一个引用，然后引用的是一个int指针</span><br><span class="line">r = &amp;i;			//	r引用了一个指针，和r赋值&amp;i就是另p指向i</span><br><span class="line">*r = 0;			//	解引用r得到i，也就是p指向的对象，将i的值改为0</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
-<li><p><strong><a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-advance.html">流程图、时序图、甘特图</a></strong></p>
+<li><p><strong>函数指针</strong>：指向的是函数而非对象。函数的类型由返回类型和形参类型共同决定，与函数名无关。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">bool (*pf)(const int&amp; a, const int&amp; b);//函数指针，pf指向一个函数，返回值是bool类型</span><br><span class="line">bool *pf(const int&amp; a, const int&amp; b);//名为pf的函数，返回bool*</span><br><span class="line"></span><br><span class="line">bool compare(const int&amp; a, const int&amp; b);</span><br><span class="line">//把函数名作为一个值使用时，该函数自动转换成指针</span><br><span class="line">pf = compare;		//pf指向名为compare的函数</span><br><span class="line">pf = &amp;compare;		//等价，取地址符是可选的</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p><strong><code>const</code>作用</strong>：</p>
+<ol>
+<li><p>定义常量</p>
+</li>
+<li><p>类型检查。const与#define定义常量的区别：const常量具有类型，编译器可以进行安全检查；#define宏定义没有数据类型，只是简单的字符替换，不能进行安全检查。</p>
+</li>
+<li><p>防止修改，起保护作用</p>
+</li>
+<li><p>节省空间，避免不必要的内存分配。const定义的常量在程序过程中只有一份拷贝。</p>
+</li>
+</ol>
+</li>
+<li><p><strong><code>const</code>的引用</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const int ci = 1024;</span><br><span class="line">const int &amp;r1 = ci;		// 正确，引用及其对象都是常量</span><br><span class="line">int &amp;r2 = ci;			// 错误，试图让一个非常量引用指向一个常量对象</span><br><span class="line"></span><br><span class="line">int i = 42;</span><br><span class="line">const int &amp;r3 = i;		// 正确，允许将const int&amp;绑定到一个普通int对象上</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>**指针和<code>const</code>**：</p>
+<ul>
+<li><p><strong>指向常量的指针（<code>pointer to const</code>）</strong>: 不能用于改变其所指对象的值。要想存放常量对象地址，只能使用指向常量的指针。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const int *a;		//指向常量的指针</span><br><span class="line">int const *a;		//同上。cosnt位于*的左侧，则const用来修饰指针指向的变量</span><br><span class="line">*a = 10;			//错误</span><br><span class="line"></span><br><span class="line">//允许把非const对象地址赋给指向const对象的指针</span><br><span class="line">const int *ptr;</span><br><span class="line">int val = 3;</span><br><span class="line">ptr = &amp;val;	//正确，但是不能通过ptr指针修改val</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>const</code>指针（<code>const pointer</code>）</strong>：常量指针，必须初始化且初始化后值不能再改变。把*放在<code>const</code>之前说明指针是一个常量，意味着不变的是指针本身的值而非指向的那个值。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int num = 0;</span><br><span class="line">int *const cur = &amp;num;			//cur 将一直指向num</span><br><span class="line">//从右往左阅读，离cur最近的是const，意味着cur本身是一个常量对象，对象的类型为int*，</span><br><span class="line">//即cur是一个常量指针，该常量指针指向一个int对象</span><br><span class="line"></span><br><span class="line">const double pi = 3.14;</span><br><span class="line">const double *const pip = &amp;pi;	//pip是一个指向常量对象的常量指针</span><br><span class="line">//pip本身是一个常量对象，对象类型是const double*，表示pip是一个指向常量的常量指针</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>**顶层<code>const</code>**：顶层<code>const</code>表示指针本身是常量，底层<code>const</code>表示指针所指对象是一个常量。更一般的，顶层<code>const</code>可以表示任意的对象是常量。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">int i = 0;</span><br><span class="line">int *const p1 = &amp;i;		//不能改变p1的值，顶层const</span><br><span class="line">const int ci = 42;		//不能改变ci的值，顶层const</span><br><span class="line">const int *p2 = &amp;ci;	//允许改变p2的值，底层const</span><br><span class="line">const int *const p3 = p2;	//靠右的const的顶层，靠左的是底层</span><br><span class="line">const int &amp;r = ci;			//声明引用的const都是底层</span><br></pre></td></tr></table></figure>
+
+<p>拷贝操作时，顶层<code>const</code>不受影响，底层<code>const</code>必须具有相同的底层<code>const</code>资格，一般来说非常量可以转换成常量。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">i = ci;		//正确</span><br><span class="line">p2 = p3;	//正确，p2和p3指向对象类型相同，p3顶层const部分不影响</span><br><span class="line"></span><br><span class="line">int *p = p3;		//错误，p3包含底层const定义而p没有</span><br><span class="line">p2 = &amp;i;			//正确，int*能转换成const int*</span><br><span class="line">int &amp;r = ci;		//错误，普通的int不能绑定到int常量上</span><br><span class="line">const int &amp;r2 = i;	//正确，const int&amp;可以绑定到普通的int上</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p><strong>static</strong>：</p>
+<ul>
+<li><p>静态变量：变量声明为static时，空间将在程序的生命周期内分配，只分配一次。类中的静态变量由对象共享，不能使用构造函数初始化，应使用类外的类名和范围解析运算符显式初始化。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class Apple&#123;</span><br><span class="line">	public:</span><br><span class="line">		static int i;</span><br><span class="line">&#125;</span><br><span class="line">int Apple::i = 0;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>静态成员：</p>
+<ul>
+<li>类对象为静态：对象的生命周期直到程序结束。</li>
+<li>类中的静态函数：允许静态成员函数仅访问静态数据成员和其他静态成员函数，无法访问非静态成员和函数。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>重载和<code>const</code>形参</strong>：</p>
+<ul>
+<li><p>顶层<code>const</code>不影响传入函数的对象。一个拥有顶层<code>const</code>的形参无法和另一个没有顶层<code>const</code>的形参区分开来。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Record lookup(Phone);</span><br><span class="line">Record lookup(cosnt Phone);		//重复声明</span><br><span class="line"></span><br><span class="line">Record lookup(Phone*);</span><br><span class="line">Record lookup(Phone* const);	//重复声明</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果形参是指针或引用，则区分其指向常量对象还是非常量对象可以实现函数重载，此时<code>const</code>是底层的。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Record lookup(Phone&amp;);</span><br><span class="line">Record lookup(cosnt Phone&amp;);		//新函数，作用于常量引用</span><br><span class="line"></span><br><span class="line">Record lookup(Phone*);</span><br><span class="line">Record lookup(const Phone*);		//新函数，作用于指向常量的指针</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong><code>this</code>指针</strong>：作用在类内部，当类的非静态成员函数中访问类的非静态成员的时候，编译器自动将对象本身地址作为一个隐含参数传递给函数。</p>
+<ul>
+<li><p>在类的非静态成员函数中返回类对象本身的时候，直接使用<code>return *this</code>.</p>
+</li>
+<li><p>参数与变量名相同时，必须<code>this-&gt;n = n</code>。</p>
+</li>
+<li><p><code>this</code>指针会被编译器解析为<code>A *const</code>。</p>
+</li>
+</ul>
+</li>
+<li><p>**<code>inline</code>**：内联能提高函数效率，但是内联是以代码膨胀为代价的，仅仅省区函数调用的开销从而提高执行效率。不适合使用内联：函数体内代码比较长；函数体内出现循环。</p>
+<ul>
+<li><p>虚函数（virtual）和内联（inline）：</p>
+<ul>
+<li><p>虚函数可以是内联函数，但是当虚函数表现多态性的时候不能内联。内联是编译期间，虚函数多态在运行期间，编译器无法知道运行期间用哪个代码，因此虚函数表现多态时不可以内联。</p>
+</li>
+<li><p><code>inline virtual</code>唯一可以内联时候：编译器知道所调用的对象是哪个类，这只有在编译器具有实际对象而不是对象的指针或引用时才会发生。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>**<code>class</code>和<code>struct</code>**：唯一区别是默认访问权限不一样，<code>struct</code>默认<code>public</code>，<code>class</code>默认<code>private</code>。</p>
+</li>
+<li><p>**<code>union</code>**：一个 union 可以有多个数据成员，但是在任意时刻只有一个数据成员可以有值。当某个成员被赋值后其他成员变为未定义状态。</p>
+</li>
+<li><p><strong><code>sizeof</code>类大小计算</strong>：</p>
+<ul>
+<li>空类大小为1字节</li>
+<li>一个类中，成员函数、静态数据成员不占存储空间</li>
+<li>不管多少个虚函数只有一个虚指针的大小</li>
+<li>派生类继承了所有基类的函数和成员，按照字节对齐计算大小。虚函数都是继承基类的虚指针。</li>
+</ul>
+</li>
+<li><p>**<code>extern &quot;C&quot;</code>**：告诉编译器按照C的方式编译。</p>
+<ul>
+<li><p>C++调用C函数：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//xx.h</span><br><span class="line">extern int add(...)</span><br><span class="line"></span><br><span class="line">//xx.c</span><br><span class="line">int add()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//xx.cpp</span><br><span class="line">extern &quot;C&quot; &#123;</span><br><span class="line">    #include &quot;xx.h&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>C调用C++函数：<code>extern &quot;C&quot;</code>在C中是语法错误，需要放在C++头文件中。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//xx.h</span><br><span class="line">extern &quot;C&quot;&#123;</span><br><span class="line">    int add();</span><br><span class="line">&#125;</span><br><span class="line">//xx.cpp</span><br><span class="line">int add()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">//xx.c</span><br><span class="line">extern int add();</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>lambda表达式</strong>：</p>
+<p><strong>[ capture list ]   ( parameter list )  -&gt;  return type   { function body }</strong></p>
+<p>capture list:捕获列表；parameter list：参数列表；return type：返回类型；function body：函数体</p>
+<p>我们可以忽略参数列表和返回类型，但必须包含捕获列表和函数体。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">auto f = [] &#123;return 42;&#125;	//忽略括号和参数列表等价于指定一个空参数列表</span><br><span class="line">cout&lt;&lt;f()&lt;&lt;endl;			//输出42</span><br><span class="line">[] (const string&amp; a,const string&amp; b) &#123;return a.size()&lt;b.size();&#125;</span><br></pre></td></tr></table></figure>
+
+<p>lambda捕获列表：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[]			空捕获列表。lambda不能使用所在函数中的变量</span><br><span class="line">[names]		names是一个逗号分隔的名字列表，都是所在函数的局部变量，默认情况下捕获列表中			的变量都被拷贝。名字前加&amp;，则采用引用捕获方式。</span><br><span class="line">[&amp;]			隐式捕获列表，采用引用捕获方式，使用所在函数的实体的引用</span><br><span class="line">[=]			隐式，采用值捕获方式，拷贝所在函数的实体的值</span><br><span class="line">[&amp;,names]	names采用值捕获方式，不能加&amp;</span><br><span class="line">[=,names]	names采用引用方式捕获，必须加&amp;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p><strong>智能指针</strong>：</p>
+<ul>
+<li><p><code>shared_ptr</code>：允许多个指针指向同一个对象。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">shared_ptr&lt;T&gt; sp;		//空指针，可以指向类型为T的对象</span><br><span class="line">p.get();				//返回p中保存的指针</span><br><span class="line">make_shared&lt;T&gt; (args);	//返回一个shared_ptr，指向一个动态分配类型为T的对象。使							用args初始化对象。最安全的分配</span><br><span class="line">shared_ptr&lt;int&gt; p = make_shared&lt;int&gt;(42);</span><br><span class="line">shared_ptr&lt;T&gt; p(q);		//p是shared_ptr的拷贝</span><br><span class="line">p = q;					//此操作会递减p的引用计数，递增q的引用计数；若p的引用计							数变为0则将其管理的原内存释放</span><br><span class="line">p.use_count();			//若p.use_count()为1，返回true</span><br><span class="line">p.unique();				//返回p共享对象的智能指针数量</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>unique_ptr</code>：独占所指向对象。不支持普通的拷贝或赋值操作，但是可以通过release或reset将指针的所有权从一个（非const）unique_ptr转移给另一个unique_ptr。不能拷贝的规则有一个例外：可以拷贝或赋值一个将要被销毁的unique_ptr，如返回局部对象的拷贝。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">unique_ptr&lt;int&gt; p(new int(42));</span><br><span class="line">unique_ptr&lt;int&gt; p1(p2);			//错误，不支持拷贝</span><br><span class="line">p1 = p2;						//错误，不支持赋值</span><br><span class="line">unique_ptr&lt;int&gt; p2(p1.release());	//将所有权从p1转移给p2。release将p1置空</span><br><span class="line">p2.reset(p3.release());				//将所有权从p3转移给p2。reset释放了p2原										来指向内存</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>weak_ptr</code>：弱引用，指向<code>shared_ptr</code>所管理的对象。将一个weak_ptr绑定到一个shared_ptr不会改变shared_ptr的引用计数。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">auto p = make_shared&lt;int&gt;(42);		</span><br><span class="line">weak_ptr&lt;int&gt; wp(p);				//wp弱共享p，p引用计数不变</span><br></pre></td></tr></table></figure></li>
+</ul>
 </li>
 </ul>
 
@@ -525,7 +600,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2023/06/21/markdown/">http://example.com/2023/06/21/markdown/</a>
+                    <a href="http://example.com/2023/06/23/c/">http://example.com/2023/06/23/c/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -563,8 +638,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/markdown/">
-                                    <span class="chip bg-color">markdown</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
                                 </a>
                             
                         </div>
@@ -647,13 +722,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/06/23/c/">
+                <a href="/2023/07/02/guan-xi-shu-ju-ku/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="C++">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="关系数据库">
                         
-                        <span class="card-title">C++</span>
+                        <span class="card-title">关系数据库</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -664,7 +739,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-23
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-02
                         </span>
                         <span class="publish-author">
                             
@@ -677,8 +752,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C++</span>
+                    <a href="/tags/SQL/">
+                        <span class="chip bg-color">SQL</span>
                     </a>
                     
                 </div>
@@ -689,7 +764,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2023/06/21/markdown/">
@@ -719,7 +794,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
