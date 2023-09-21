@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>数据库设计 | RonronnerW</title><meta name="author" content="RonronnerW"><meta name="copyright" content="RonronnerW"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="数据库设计和E-R模型 E-R模型：  实体集：相同类型或性质的实体的集合。如大学的教师就是一个实体集。 联系集：联系指多个实体间的关联。联系集是相同类型联系的集合。 属性：属性可取值的集合叫域 简单属性：不能划分更小的部分 复合属性：可以再划分，如地址 单值属性：如id 多值属性：如电话 派生属性：属性值不存储，需要时计算，如根据出生计算年龄     约束：  映射基数：表示一个实体通过联系集能">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>数据库设计 | RonronnerW</title><meta name="author" content="RonronnerW"><meta name="copyright" content="RonronnerW"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="数据库设计和E-R模型E-R模型 实体集：相同类型或性质的实体的集合。 联系集：联系指多个实体间的关联。联系集是相同类型联系的集合。 属性：属性可取值的集合叫域 简单属性：不能划分更小的部分 复合属性：可以再划分，如地址 单值属性：如id 多值属性：如电话 派生属性：属性值不存储，需要时计算，如根据出生计算年龄    约束 映射基数：表示一个实体通过联系集能关联的实体个数。有一对一、一对多、多对一">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据库设计">
 <meta property="og:url" content="http://example.com/2023/07/06/shu-ju-ku-she-ji/index.html">
 <meta property="og:site_name" content="RonronnerW">
-<meta property="og:description" content="数据库设计和E-R模型 E-R模型：  实体集：相同类型或性质的实体的集合。如大学的教师就是一个实体集。 联系集：联系指多个实体间的关联。联系集是相同类型联系的集合。 属性：属性可取值的集合叫域 简单属性：不能划分更小的部分 复合属性：可以再划分，如地址 单值属性：如id 多值属性：如电话 派生属性：属性值不存储，需要时计算，如根据出生计算年龄     约束：  映射基数：表示一个实体通过联系集能">
+<meta property="og:description" content="数据库设计和E-R模型E-R模型 实体集：相同类型或性质的实体的集合。 联系集：联系指多个实体间的关联。联系集是相同类型联系的集合。 属性：属性可取值的集合叫域 简单属性：不能划分更小的部分 复合属性：可以再划分，如地址 单值属性：如id 多值属性：如电话 派生属性：属性值不存储，需要时计算，如根据出生计算年龄    约束 映射基数：表示一个实体通过联系集能关联的实体个数。有一对一、一对多、多对一">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/avatar.jpg">
 <meta property="article:published_time" content="2023-07-06T14:07:16.000Z">
-<meta property="article:modified_time" content="2023-07-11T02:47:15.346Z">
+<meta property="article:modified_time" content="2023-09-13T01:33:10.546Z">
 <meta property="article:author" content="RonronnerW">
 <meta property="article:tag" content="数据库设计 E-R模型 关系数据库">
 <meta name="twitter:card" content="summary">
@@ -58,7 +58,7 @@
   isHome: false,
   isHighlightShrink: undefined,
   isToc: true,
-  postUpdate: '2023-07-11 10:47:15'
+  postUpdate: '2023-09-13 09:33:10'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -162,10 +162,8 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-poo"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/background.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="RonronnerW"><img class="site-icon" src="/img/favicon.png"/><span class="site-name">RonronnerW</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-poo"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">数据库设计</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-06T14:07:16.000Z" title="发表于 2023-07-06 22:07:16">2023-07-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-11T02:47:15.346Z" title="更新于 2023-07-11 10:47:15">2023-07-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="数据库设计"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h4 id="数据库设计和E-R模型"><a href="#数据库设计和E-R模型" class="headerlink" title="数据库设计和E-R模型"></a>数据库设计和E-R模型</h4><ul>
-<li><p><strong>E-R模型</strong>：</p>
-<ul>
-<li>实体集：相同类型或性质的实体的集合。如大学的教师就是一个实体集。</li>
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-poo"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/background.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="RonronnerW"><img class="site-icon" src="/img/favicon.png"/><span class="site-name">RonronnerW</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-poo"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">数据库设计</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-06T14:07:16.000Z" title="发表于 2023-07-06 22:07:16">2023-07-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-09-13T01:33:10.546Z" title="更新于 2023-09-13 09:33:10">2023-09-13</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="数据库设计"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h4 id="数据库设计和E-R模型"><a href="#数据库设计和E-R模型" class="headerlink" title="数据库设计和E-R模型"></a>数据库设计和E-R模型</h4><h5 id="E-R模型"><a href="#E-R模型" class="headerlink" title="E-R模型"></a><strong>E-R模型</strong></h5><ul>
+<li>实体集：相同类型或性质的实体的集合。</li>
 <li>联系集：联系指多个实体间的关联。联系集是相同类型联系的集合。</li>
 <li>属性：属性可取值的集合叫域<ul>
 <li>简单属性：不能划分更小的部分</li>
@@ -176,15 +174,12 @@
 </ul>
 </li>
 </ul>
-</li>
-<li><p><strong>约束</strong>：</p>
-<ul>
+<h5 id="约束"><a href="#约束" class="headerlink" title="约束"></a><strong>约束</strong></h5><ul>
 <li>映射基数：表示一个实体通过联系集能关联的实体个数。有一对一、一对多、多对一和多对多</li>
-<li>参与约束：全部的或部分的：更具实体是否全部参与联系区分</li>
+<li>参与约束：全部的或部分的：根据实体是否全部参与联系区分</li>
+<li>码</li>
 </ul>
-</li>
-<li><p><strong>E-R图</strong>：</p>
-<ul>
+<h5 id="E-R图"><a href="#E-R图" class="headerlink" title="E-R图"></a><strong>E-R图</strong></h5><ul>
 <li><p>基本结构：</p>
 <ul>
 <li>分成两部分的矩形：实体集，属性加下划线表示主码</li>
@@ -192,37 +187,80 @@
 <li>未分割的矩形：联系集的属性</li>
 <li>线段：连接属性集和联系集</li>
 <li>虚线：连接联系集属性和联系集</li>
+<li>双实线：全部参与</li>
 </ul>
 </li>
 <li><p>映射基数：</p>
 <ul>
 <li>一对一：联系集到实体集的箭头</li>
 <li>一对多&#x2F;多对一&#x2F;多对多：一用箭头，多用线段</li>
-<li>线上用<code>l..h</code>标明最小和最大映射基数，*代表没有限制</li>
+<li>线上用<code>l..h</code>标明最小和最大映射基数，最小值为1表示实体集全部参与，最大值为1表示实体参与至多一个联系，*代表没有限制</li>
+</ul>
+</li>
+</ul>
+<h5 id="弱实体集"><a href="#弱实体集" class="headerlink" title="弱实体集"></a><strong>弱实体集</strong></h5><ul>
+<li><p>没有足够的属性以形成主码的实体集。有主码的实体集称为强实体集。弱实体集必须与称作标识或属主实体集的实体集关联才有意义。每个弱实体必须和一个标识实体关联。</p>
+<p>区分弱实体集中实体的属性集合叫分辨符&#x2F;部分码</p>
+<p>弱实体集的主码由标识实体集的主码加上分辨符构成</p>
+<p>在E-R图中：</p>
+<ul>
+<li>弱实体集的分辨符以虚下划线标明</li>
+<li>关联弱实体集和标识实体集的联系集以双菱形表示</li>
+</ul>
+</li>
+</ul>
+<h5 id="拓展的E-R特性"><a href="#拓展的E-R特性" class="headerlink" title="拓展的E-R特性"></a><strong>拓展的E-R特性</strong></h5><ul>
+<li><p>特化：</p>
+<ul>
+<li><p>实体集中可能包含一些子集，子集中的实体某些方面区别于实体集中的其他实体。例如，实体集<code>person</code>可分为<code>employee</code>和<code>student</code>, 这两类中每一个都用一个属性集来描述，<code>employee</code>可以进一步用<code>salary</code>来描述，<code>student</code>进一步用<code>cred</code>来描述。</p>
+</li>
+<li><p>在实体集内部进行分组的过程称为<strong>特化</strong></p>
+</li>
+<li><p>E-R图中，特化用从特化实体指向另一方实体的空心箭头来表示。称这种关系为ISA关系，表示“是一个”。</p>
+</li>
+</ul>
+</li>
+<li><p>概化：高层实体集与低层实体集的包含关系。提取公共属性，概化是特化的逆过程</p>
+<ul>
+<li>全部概化&#x2F;特化：每个高层实体必须属于一个低层实体集</li>
+<li>部分概化&#x2F;特化：允许一些高层实体不属于任何低层实体</li>
+</ul>
+</li>
+<li><p>高层和低层实体集</p>
+<ul>
+<li>低层实体集有两种情况<ul>
+<li>不相交：要求一个实体至多属于一个低层实体集</li>
+<li>重叠：允许属于多个低层实体集</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p><strong>弱实体集</strong>：没有足够的属性以形成主码的实体集。弱实体集必须与称作标识或属主实体集的实体集关联才有意义。每个弱实体必须和一个标识实体关联</p>
+<li><p>属性继承：高层实体集的属性被低层实体集所继承。</p>
+</li>
+<li><p>聚集：通过抽象将联系视为高层实体</p>
 </li>
 </ul>
-<h4 id="关系数据库设计："><a href="#关系数据库设计：" class="headerlink" title="关系数据库设计："></a>关系数据库设计：</h4><ul>
-<li><p><strong>第一范式</strong>：关系的所有属性都是原子的（不可分的）。</p>
-</li>
+<h4 id="关系数据库设计"><a href="#关系数据库设计" class="headerlink" title="关系数据库设计"></a>关系数据库设计</h4><h5 id="第一范式"><a href="#第一范式" class="headerlink" title="第一范式"></a>第一范式</h5><p>​	一个域是原子的，如果该域的元素被认为是不可分的单元。</p>
+<p>​	关系的所有属性的域都是原子的（不可分的），则该关系模式属于第一范式。</p>
+<h5 id="使用函数依赖分解"><a href="#使用函数依赖分解" class="headerlink" title="使用函数依赖分解"></a>使用函数依赖分解</h5><ul>
 <li><p><strong>码和函数依赖</strong>：</p>
 <ul>
-<li>超码：子集K是超码的条件：关系r的实例中的所有元组对t1和t2总满足，若t1≠t2，则t1[K]≠t2[K]。</li>
+<li>超码：可以唯一标识关系中一条元组的一个或多个属性的集合。子集K是超码的条件：关系r的实例中的所有元组对t1和t2总满足，若t1≠t2，则t1[K]≠t2[K]。</li>
 <li>满足函数依赖 a-&gt;b 的条件：对所有元组对t1和t2，若t1[a]&#x3D;t2[a]，则t1[b]&#x3D;t2[b]</li>
+<li>每个合法实例都满足函数依赖，则说该函数依赖在模式上成立</li>
+<li>如果函数依赖K-&gt;R在r(R)上成立，则K是r(R)的一个超码。若t1[K]&#x3D;t2[K]，则t1[R]&#x3D;t2[R]（t1&#x3D;t2)</li>
+<li>有些函数依赖称为平凡的，因为它们在所有关系中都满足。一般地，如果b包含于a，则形如a-&gt;b的函数依赖是平凡的。</li>
+<li>A-&gt;B, B-&gt;C, 则A-&gt;C</li>
 </ul>
 </li>
 <li><p><strong>Boyce-Codd范式（BCNF）</strong>：</p>
 <ul>
-<li><p>对F的闭包中所有形如 a-&gt;b 的函数依赖，下面至少一项成立：</p>
+<li><p>对F的闭包（F﹢）中所有形如 a-&gt;b 的函数依赖，下面至少一项成立：</p>
 <ol>
 <li><p>a-&gt;b 是平凡的函数依赖（即b包含于a）</p>
 </li>
 <li><p>a 是关系模式的一个超码</p>
-</li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">计算a﹢，并且验证它是否包含R中的所有属性，即验证它是否是R的超码</span><br></pre></td></tr></table></figure></li>
 </ol>
 </li>
 <li><p>分解不属于BCNF模式的一般规则：</p>
@@ -233,7 +271,7 @@
 <ul>
 <li><p>对F的闭包中所有形如 a-&gt;b 的函数依赖，下面至少一项成立：</p>
 <ol>
-<li><p>a-&gt;b 是一个平凡的函数依赖</p>
+<li><p>a-&gt;b 是一个平凡的函数依赖（b包含于a）</p>
 </li>
 <li><p>a 是 R 的一个超码</p>
 </li>
@@ -243,9 +281,9 @@
 </li>
 </ul>
 </li>
-<li><p><strong>函数依赖理论</strong>：</p>
-<ul>
-<li><p>公理：</p>
+</ul>
+<h5 id="函数依赖理论"><a href="#函数依赖理论" class="headerlink" title="函数依赖理论"></a>函数依赖理论</h5><ul>
+<li><p>Armstrong公理：</p>
 <ul>
 <li>自反律：若a为一属性集且b包含于a，则a-&gt;b成立</li>
 <li>增补律：若a-&gt;b成立且r，则r∪a-&gt;r∪b</li>
@@ -255,17 +293,49 @@
 <li>伪传递律：a-&gt;b和c∪b-&gt;r，则a∪c-&gt;r</li>
 </ul>
 </li>
-<li><p>属性集的闭包：</p>
+<li><p>计算闭包（F﹢）的过程</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">F﹢=F</span><br><span class="line">	repeat</span><br><span class="line">		for each F﹢中的函数依赖f</span><br><span class="line">			在f上应用自反律和增补律</span><br><span class="line">			将结果加入到F﹢中</span><br><span class="line">		for each F﹢中的一对函数依赖f1和f2</span><br><span class="line">			if f1和f2可以使用传递律结合起来</span><br><span class="line">				将结果加入到F﹢中</span><br><span class="line">	until F﹢不再发生变化</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>属性集的闭包：a为一个属性集，函数依赖集下被a所确定的所有属性的集合称为a的<strong>闭包</strong>(a﹢)</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ret:=a;</span><br><span class="line">	repeat</span><br><span class="line">		for each 函数依赖 b-&gt;c in F do</span><br><span class="line">			begin</span><br><span class="line">				if b包含于ret then ret:=ret∪c;</span><br><span class="line">            end</span><br><span class="line">     until (ret不变)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>闭包的用途：<ul>
+<li>判断a是否为超码，计算a﹢，检查a﹢是否包含所有属性</li>
+<li>通过检查是否b包含于a﹢，我们可以检查函数依赖a-&gt;b是否成立</li>
+</ul>
+</li>
+</ul>
 </li>
 <li><p>正则覆盖：是一个依赖集，其中任何函数依赖都不含无关属性（除去一个属性不影响闭包，则该属性是无关属性），函数依赖左半部都是唯一的。</p>
-</li>
-<li><p>无损分解</p>
-</li>
+<ul>
+<li><p>函数依赖集F及F中的函数依赖a-&gt;b</p>
+<ul>
+<li>如果A∈a并且F逻辑蕴含 (F-{a-&gt;b})∪(a-A)-&gt;b，则属性A在a中是无关的。</li>
+<li>如果A∈b并且函数依赖集 (F-{a-&gt;b})∪a-&gt;(b-A)逻辑蕴含F，则属性A在b中是无关的。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">例如，假设F包含AB-&gt;CD, A-&gt;E, E-&gt;C. 检验C在AB-&gt;CD中是否是无关的</span><br><span class="line">计算F&#x27;=&#123;A-&gt;E, E-&gt;C, AB-&gt;D&#125;下AB的闭包为ABCDE包含CD，所以是无关的</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
+<li><p>无损分解：把关系R投影到R1和R2上然后计算投影结果的自然连接，仍然能得到R。如果R1∩R2是R1或R2的超码，R上的分解就是无损分解。</p>
+</li>
+<li><p>保持依赖</p>
+</li>
 </ul>
-</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-E-R%E6%A8%A1%E5%9E%8B-%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库设计 E-R模型 关系数据库</a></div><div class="post_share"><div class="social-share" data-image="/img/avatar.jpg" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/07/02/guan-xi-shu-ju-ku/" title="关系数据库"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">关系数据库</div></div></a></div><div class="next-post pull-right"><a href="/2023/07/11/shu-ju-ku-cun-chu-he-cha-xun/" title="数据库存储和查询"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">数据库存储和查询</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">RonronnerW</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/RonronnerW"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/RonronnerW" target="_blank" title="Github"><i class="fab fa-github" style="color: #4a7dbe;"></i></a><a class="social-icon" href="/wlbin_1019@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="/2568998391" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E5%92%8CE-R%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">数据库设计和E-R模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%EF%BC%9A"><span class="toc-number">2.</span> <span class="toc-text">关系数据库设计：</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/10/wang-luo-bian-cheng/" title="网络编程">网络编程</a><time datetime="2023-08-10T01:21:13.000Z" title="发表于 2023-08-10 09:21:13">2023-08-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/09/jin-cheng-he-xian-cheng/" title="进程和线程">进程和线程</a><time datetime="2023-08-09T02:16:12.000Z" title="发表于 2023-08-09 10:16:12">2023-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/05/linux-xi-tong-bian-cheng-ru-men/" title="Linux系统编程入门">Linux系统编程入门</a><time datetime="2023-08-05T06:48:38.000Z" title="发表于 2023-08-05 14:48:38">2023-08-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/04/sql/" title="SQL">SQL</a><time datetime="2023-08-04T00:53:01.000Z" title="发表于 2023-08-04 08:53:01">2023-08-04</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/background.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2023 By RonronnerW</div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>function loadValine () {
+<h5 id="分解算法"><a href="#分解算法" class="headerlink" title="分解算法"></a>分解算法</h5><ul>
+<li><p>BCNF分解</p>
+</li>
+<li><p>3NF分解</p>
+</li>
+</ul>
+<h5 id="使用多值依赖的分解"><a href="#使用多值依赖的分解" class="headerlink" title="使用多值依赖的分解"></a>使用多值依赖的分解</h5><ul>
+<li><p>多值依赖</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a-&gt;-&gt;b</span><br><span class="line">关系r中任意一对满足t1[a]=t2[a]的元组对t1和t2,r中都存在元组t3和t4,使得</span><br><span class="line">	t1[a]=t2[a]=t3[a]=t4[a]</span><br><span class="line">	t3[b]=t1[b]</span><br><span class="line">	t3[R-b]=t2[R-b]</span><br><span class="line">	t4[b]=t2[b]</span><br><span class="line">	t4[R-b]=t1[R-b]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第四范式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">函数依赖和多值依赖集为D的关系模式r(R)属于第四范式的条件是，对D﹢中所有形如a-&gt;-&gt;b的多值依赖，至少有一下之一成立：</span><br><span class="line">	a-&gt;-&gt;b是一个平凡的多值依赖</span><br><span class="line">	a是R的一个超码</span><br></pre></td></tr></table></figure></li>
+</ul>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1-E-R%E6%A8%A1%E5%9E%8B-%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库设计 E-R模型 关系数据库</a></div><div class="post_share"><div class="social-share" data-image="/img/avatar.jpg" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/07/02/guan-xi-shu-ju-ku/" title="关系数据库"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">关系数据库</div></div></a></div><div class="next-post pull-right"><a href="/2023/07/11/shu-ju-ku-cun-chu-he-cha-xun/" title="数据库存储和查询"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">数据库存储和查询</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">RonronnerW</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/RonronnerW"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/RonronnerW" target="_blank" title="Github"><i class="fab fa-github" style="color: #4a7dbe;"></i></a><a class="social-icon" href="/wlbin_1019@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="/2568998391" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E5%92%8CE-R%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">数据库设计和E-R模型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#E-R%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">E-R模型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BA%A6%E6%9D%9F"><span class="toc-number">1.2.</span> <span class="toc-text">约束</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#E-R%E5%9B%BE"><span class="toc-number">1.3.</span> <span class="toc-text">E-R图</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%B1%E5%AE%9E%E4%BD%93%E9%9B%86"><span class="toc-number">1.4.</span> <span class="toc-text">弱实体集</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8B%93%E5%B1%95%E7%9A%84E-R%E7%89%B9%E6%80%A7"><span class="toc-number">1.5.</span> <span class="toc-text">拓展的E-R特性</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1"><span class="toc-number">2.</span> <span class="toc-text">关系数据库设计</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E8%8C%83%E5%BC%8F"><span class="toc-number">2.1.</span> <span class="toc-text">第一范式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B0%E4%BE%9D%E8%B5%96%E5%88%86%E8%A7%A3"><span class="toc-number">2.2.</span> <span class="toc-text">使用函数依赖分解</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E4%BE%9D%E8%B5%96%E7%90%86%E8%AE%BA"><span class="toc-number">2.3.</span> <span class="toc-text">函数依赖理论</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%86%E8%A7%A3%E7%AE%97%E6%B3%95"><span class="toc-number">2.4.</span> <span class="toc-text">分解算法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%80%BC%E4%BE%9D%E8%B5%96%E7%9A%84%E5%88%86%E8%A7%A3"><span class="toc-number">2.5.</span> <span class="toc-text">使用多值依赖的分解</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/14/java/" title="Java">Java</a><time datetime="2023-09-14T11:43:07.000Z" title="发表于 2023-09-14 19:43:07">2023-09-14</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/20/fen-bu-shi-xi-tong-yu-shi-xu-shu-ju-ku/" title="分布式系统与时序数据库">分布式系统与时序数据库</a><time datetime="2023-08-20T08:01:03.000Z" title="发表于 2023-08-20 16:01:03">2023-08-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/10/wang-luo-bian-cheng/" title="网络编程">网络编程</a><time datetime="2023-08-10T01:21:13.000Z" title="发表于 2023-08-10 09:21:13">2023-08-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/09/jin-cheng-he-xian-cheng/" title="进程和线程">进程和线程</a><time datetime="2023-08-09T02:16:12.000Z" title="发表于 2023-08-09 10:16:12">2023-08-09</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/background.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2023 By RonronnerW</div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>function loadValine () {
   function initValine () {
     const valine = new Valine(Object.assign({
       el: '#vcomment',
